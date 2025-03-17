@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Table",
+    "price": "47,043",
+    "detail": "Best in class, Near to your table, Love It",
+    "image": "https://m.media-amazon.com/images/I/81AtpKqeCPL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Love it",
+    "price": "66,353",
+    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+    "image": "https://images.urbndata.com/is/image/Anthropologie/79790622_014_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540"
+  },
+  {
+    "name": "It's awesome",
+    "price": "35,853",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "https://m.media-amazon.com/images/I/81wtqOElIPL._AC_SY450_.jpg"
+  },
+  {
+    "name": "Wow",
+    "price": "47,043",
+    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+    "image": "https://i.pinimg.com/originals/e6/d2/cc/e6d2cc3d8ac61a942a0d0dfc5c6459bc.jpg"
+  },{
+    "name": "Table",
+    "price": "47,043",
+    "detail": "Best in class, Near to your table, Love It",
+    "image": "https://m.media-amazon.com/images/I/81AtpKqeCPL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Love it",
+    "price": "66,353",
+    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+    "image": "https://images.urbndata.com/is/image/Anthropologie/79790622_014_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540"
+  },
+  {
+    "name": "It's awesome",
+    "price": "35,853",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "https://m.media-amazon.com/images/I/81wtqOElIPL._AC_SY450_.jpg"
+  },
+  {
+    "name": "Wow",
+    "price": "47,043",
+    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+    "image": "https://i.pinimg.com/originals/e6/d2/cc/e6d2cc3d8ac61a942a0d0dfc5c6459bc.jpg"
+  }
+]

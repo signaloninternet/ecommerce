@@ -1,0 +1,179 @@
+/* Overall Container */
+.c-wrapper {
+    padding: 2rem 4rem;
+    background-color: #f7f7f7;
+}
+
+/* Flexbox Alignments */
+.c-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 50%;
+}
+
+.c-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typography */
+.orangeText {
+    color: #ff6a00;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
+
+.primaryText {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
+
+.secondaryText {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 0rem;
+}
+
+/* Contact Modes */
+.contactModes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.mode {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.mode:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mode .icon {
+    background-color: #ececec;
+    padding: 0.75rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail .primaryText {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.detail .secondaryText {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+/* Button Styling */
+.mode .button {
+    margin-top: 1rem;
+    background: linear-gradient(to right, blue, lightblue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 300ms ease, box-shadow 300ms ease;
+    background-size: 200% 100%;
+    background-position: 0 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.mode .button:hover {
+    background-color: blue;
+    box-shadow: 0 0 15px rgba(64, 224, 208, 0.8), 0 0 25px rgba(64, 224, 208, 0.6), 0 0 35px rgba(64, 224, 208, 0.4);
+}
+
+/* Image Container */
+.image-container {
+    width: 30rem;
+    height: 35rem;
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0;
+    border: 8px solid rgba(255, 255, 255, 0.12);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .c-container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center;
+    }
+
+    .c-left, .c-right {
+        width: 100%; /* Make both sections full-width on mobile */
+        max-width: 100%; /* Ensure full width is used */
+    }
+
+    .contactModes {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+
+    .mode {
+        flex-direction: column; /* Stack icon and details vertically on mobile */
+        align-items: center;
+    }
+
+    .detail {
+        align-items: center; /* Center text on mobile */
+        text-align: center; /* Center-align text */
+    }
+
+    .image-container {
+        width: 100%; /* Full width for image container on mobile */
+        height: auto; /* Adjust height for mobile responsiveness */
+        border-radius: 0; /* Remove border radius for better fit on mobile */
+    }
+
+    .orangeText, .primaryText, .secondaryText {
+        text-align: center; /* Center text for better readability */
+    }
+
+    .mode .button {
+        width: 100%; /* Full-width button for better usability */
+    }
+}

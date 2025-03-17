@@ -1,0 +1,118 @@
+/* Existing CSS */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.r-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 15px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.r-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.r-price {
+  display: block;
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.price-symbol {
+  color: orange;
+  font-weight: bold;
+}
+
+.primaryText {
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+}
+
+.secondaryText {
+  font-size: 16px;
+  color: #777;
+}
+
+.r-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.shopping-bag-icon {
+  font-size: 24px;
+  color: #28a745;
+  margin-right: 10px;
+}
+
+.buy-now-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+  background-color: #218838;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .r-card {
+    margin: 10px;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .r-price {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .primaryText {
+    font-size: 18px;
+  }
+
+  .secondaryText {
+    font-size: 14px;
+  }
+
+  .shopping-bag-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .buy-now-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

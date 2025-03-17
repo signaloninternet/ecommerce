@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.navbar-logo img {
+    width: 40px; /* Slightly smaller logo for better fit */
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-logo h1 {
+    font-size: 20px; /* Reduce font size on smaller screens */
+    margin: 0;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px; /* Slightly reduced gap for smaller screens */
+    margin: 10px 0 0 0;
+    padding: 0;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: center; /* Center links on smaller screens */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Reduce font size for better mobile fit */
+    padding: 8px; /* Reduced padding for smaller screens */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    padding: 20px; /* Reduce padding for mobile */
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 24px; /* Reduce font size for better readability on mobile */
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    font-size: 16px; /* Adjusted font size for readability on mobile */
+}
+
+.summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Reduced gap for smaller screens */
+    justify-content: center; /* Center cards on smaller screens */
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px; /* Reduce padding for mobile */
+    width: 100%; /* Full width on mobile */
+    max-width: 220px; /* Restrict maximum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 36px; /* Slightly smaller icon size for mobile */
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: #333;
+    font-size: 14px; /* Adjust font size for readability on mobile */
+    margin: 0;
+}
+
+.text h3 {
+    color: #007bff;
+    font-size: 20px; /* Adjust font size for better readability on mobile */
+    margin: 5px 0 0 0;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px; /* Reduce padding for mobile */
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px; /* Add margin for spacing */
+    }
+
+    .nav-links {
+        justify-content: flex-start; /* Align links to the start */
+    }
+
+    .summary {
+        gap: 10px; /* Further reduce gap for smaller screens */
+    }
+
+    .card {
+        max-width: 180px; /* Reduce max-width for small screens */
+    }
+}
